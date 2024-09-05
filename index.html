@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Website Title</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- content of header goes here -->
+      <h1 id="logo">My Website</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Projects</a>
+          </li>
+          <li>
+            <a href="">Work Experiences</a>
+          </li>
+        </ul>
+        <!-- use anchoring to emmet duplication i.e ol>li*(however many duplictes)>a -->
+      </nav>
+    </header>
+
+    <main>
+      <!-- content of website goes here -->
+      <article>
+        <header>
+          <!-- articles content header here -->
+          <h2>StudySpace WebApp</h2>
+          <h3>Stack: Python, JavaScript, HTML5, CSS, Django, Vue, SQL</h3>
+        </header>
+
+        <main>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            officia sapiente praesentium eveniet quibusdam eius ipsam odit aut.
+            Sequi libero porro nesciunt quisquam, itaque exercitationem ea.
+            Doloremque soluta cum iure delectus? Consectetur minima nulla quae
+            cum natus ipsa nemo voluptatem repellendus et, porro distinctio
+            laboriosam amet ut doloribus maxime unde?
+          </p>
+          <blockquote>
+            "Boosted productivity by 40%" - <cite>FYP, 2024</cite>
+          </blockquote>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam animi
+            dolorum explicabo a quibusdam, at suscipit sint nemo, delectus velit
+            reiciendis ducimus ipsum optio iste illo alias vero ea! Deserunt.
+          </p>
+        </main>
+
+        <footer>
+          <h2>Author: Raqeeb</h2>
+          <img src="https://picsum.photos/100/100" alt="Profile picture" />
+          <h3>Last edited: 30-08-2024</h3>
+          <a href="https://www.linkedin.com/in/raqeeb-rahim/" target="_blank"
+            >My LinkedIn account</a
+          >
+        </footer>
+      </article>
+      <article>
+        <header>
+          <!-- articles content header here -->
+          <h2>StudySpace WebApp</h2>
+          <h3>Stack: Python, JavaScript, HTML5, CSS, Django, Vue, SQL</h3>
+        </header>
+
+        <main>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            officia sapiente praesentium eveniet quibusdam eius ipsam odit aut.
+            Sequi libero porro nesciunt quisquam, itaque exercitationem ea.
+            Doloremque soluta cum iure delectus? Consectetur minima nulla quae
+            cum natus ipsa nemo voluptatem repellendus et, porro distinctio
+            laboriosam amet ut doloribus maxime unde?
+          </p>
+          <blockquote>
+            "Boosted productivity by 40%" - 
+            <cite>FYP,<a href="#">inline block</a> 2024</cite>
+          </blockquote>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam animi
+            dolorum explicabo a quibusdam, at suscipit sint nemo, delectus velit
+            reiciendis ducimus ipsum optio iste illo alias vero ea! Deserunt.
+          </p>
+        </main>
+
+        <footer>
+          <h2>Author: Raqeeb</h2>
+          <img src="https://picsum.photos/100/100" alt="Profile picture" />
+          <h3>Last edited: 30-08-2024</h3>
+          <a href="https://www.linkedin.com/in/raqeeb-rahim/" target="_blank"
+            >My LinkedIn account</a
+          >
+        </footer>
+      </article>
+
+      <aside>
+        <section>
+          <h4>Filter by Month</h4>
+          <nav>
+            <ul>
+              <li><a href=""></a>Filter for January</li>
+              <li><a href=""></a>Filter for February</li>
+              <li><a href=""></a>Filter for March</li>
+            </ul>
+          </nav>
+        </section>
+
+        <section>
+          <h4>Filter by category</h4>
+          <nav>
+            <ul>
+              <li><a href=""></a>Python</li>
+              <li><a href=""></a>JavaScript</li>
+              <li><a href=""></a>React</li>
+            </ul>
+          </nav>
+        </section>
+      </aside>
+
+      <hr />
+
+      <h2>Sign up for something here!</h2>
+      <!-- action is where we are sending, method is Get Put delete etc. -->
+      <form action="" method="">
+        <label for="first_name"> First name: </label>
+        <input type="text" id="first_name" name="first_name" required />
+
+        <br />
+
+        <label for="last_name"> Last name: </label>
+        <input type="text" id="last_name" name="last_name" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+        <br />
+        <!-- name is how you link these together -->
+        <label for="fav_animal">Favourite Animal:</label>
+        <input type="radio" name="fav_animal" id="dog" value="dog" />
+        <label for="dog">Dog</label>
+        <input type="radio" name="fav_animal" id="cat" value="cat" />
+        <label for="racoon">racoon</label>
+        <input type="radio" name="fav_animal" id="racoon" value="racoon" />
+        <label for="cat">cat</label>
+        <br />
+
+        <label for="country">Country: </label>
+        <select name="country" id="country">
+          <option value="england">England</option>
+          <option value="dubai" selected>Dubai</option>
+        </select>
+        <br />
+        <label for="bio">Biography:</label>
+        <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
+        <br />
+        <input type="checkbox" id="subscribe" name="subscribe" />
+        <label for="subscribe">Subscribe here click now lol</label>
+        <br />
+        <!-- value on submit button is the text. -->
+        <input type="submit" value="send" />
+      </form>
+
+      <hr />
+    </main>
+
+    <footer>
+      <!-- content of footer goes here -->
+      <h2>MyWebsite</h2>
+      <section>
+        <nav>
+          <ul>
+            <div>
+              <li><a href=""></a>Home</li>
+              <li><a href=""></a>About Us</li>
+              <li><a href=""></a>Contact</li>
+              <li><a href=""></a>Careers</li>
+            </div>
+            <div>
+              <li><a href=""></a>Privacy</li>
+              <li><a href=""></a>Cookies</li>
+              <li><a href=""></a>Terms & Conditions</li>
+            </div>
+          </ul>
+        </nav>
+      </section>
+    </footer>
+  </body>
+</html>

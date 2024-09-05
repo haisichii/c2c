@@ -1,0 +1,54 @@
+/* default selector will do every type */
+
+
+body {
+    background-color: rgb(237, 186, 212);
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    margin: 0px 0px 0px 0px;
+    /* top right bottom left - like a clock */
+    padding: 8px;
+}
+
+ul {
+    margin: 0px;
+}
+
+/* child sector will apply to every descendant in a parent tag */
+body > header{
+    background-color: orange;
+}
+
+body > footer {
+    background-color: aquamarine;
+}
+
+/* targets everything '*' */
+/* > child selector- direct descendant */
+/* type selectors: p, div, header, a.. */
+/* class selectors: class="main_button"  then we do .main_button */
+/* id selector: selects all element with id (should be unique) then we do # */
+/* pseudo class i.e like visited links  */
+/* pseudo element i.e p::first-line (every para first line) */
+
+
+/* padding does NOT overlap, margins CAN overlap. */
+
+/* block tags take up full width of page */
+/* inline tags only take up their own space */
+
+/* So we can make things inline to change height width lol? */
+
+cite > a {
+    display: inline-block;
+    padding: 10px;
+    width: 80px;
+    background-color: rgb(219, 143, 143);
+}
+
+#logo{
+    color: white;
+}
