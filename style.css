@@ -5,6 +5,27 @@ body {
     background-color: rgb(237, 186, 212);
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
+    font-size: 1.5vw;
+}
+
+body > main article{
+    width: 60%;
+    margin: auto;
+}
+
+#main-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+form {
+    text-align: center;
+}
+
+h2{
+    text-align: center;
 }
 
 h1 {
@@ -20,11 +41,35 @@ ul {
 /* child sector will apply to every descendant in a parent tag */
 body > header{
     background-color: orange;
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-around;
 }
 
-body > footer {
-    background-color: aquamarine;
+#navul{
+    display: flex;
 }
+
+#navul > li {
+    padding: 8px;
+    margin: 16px;
+}
+
+body > header > nav > ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbutton {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 16%;
+}
+
+
 
 /* targets everything '*' */
 /* > child selector- direct descendant */
@@ -51,4 +96,39 @@ cite > a {
 
 #logo{
     color: white;
+    margin: 0px;
+    padding: 8px;
+    width: 16%;
+}
+
+img {
+    border-radius: 50%;
+}
+
+/* Pixels, EM/REMs, VW/VH
+
+Pixels are absolute. Same size on every screen 
+EM/REMS are ratioed of parent elements. Relative.
+viewport width and viewport height = Percentage of the viewport. This means it scales regardless of screen size.
+*/
+
+body > footer {
+    background-color: aquamarine;
+    display: flex;
+}
+
+#footer-ul{
+    display: flex;
+    list-style: none;
+
+}
+
+#footer-ul > div > li {
+    margin-left: 120px;
+    
+}
+
+#footer-ul > div > li > a {
+    text-decoration: none;
+    color: blue;
 }

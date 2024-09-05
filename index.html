@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Website Title</title>
   </head>
@@ -10,20 +11,20 @@
   <body>
     <header>
       <!-- content of header goes here -->
-      <h1 id="logo">My Website</h1>
-      <nav>
-        <ul>
+      <h1 id="logo">MyWebsite</h1>
+      <nav aria-label="Navbar">
+        <ul id="navul">
           <li>
-            <a href="">Home</a>
+            <a href="" class="navbutton">Home</a>
           </li>
           <li>
-            <a href="">About</a>
+            <a href="" class="navbutton">About</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="" class="navbutton">Projects</a>
           </li>
           <li>
-            <a href="">Work Experiences</a>
+            <a href="" class="navbutton">Work Experiences</a>
           </li>
         </ul>
         <!-- use anchoring to emmet duplication i.e ol>li*(however many duplictes)>a -->
@@ -32,101 +33,111 @@
 
     <main>
       <!-- content of website goes here -->
-      <article>
-        <header>
-          <!-- articles content header here -->
-          <h2>StudySpace WebApp</h2>
-          <h3>Stack: Python, JavaScript, HTML5, CSS, Django, Vue, SQL</h3>
-        </header>
-
-        <main>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            officia sapiente praesentium eveniet quibusdam eius ipsam odit aut.
-            Sequi libero porro nesciunt quisquam, itaque exercitationem ea.
-            Doloremque soluta cum iure delectus? Consectetur minima nulla quae
-            cum natus ipsa nemo voluptatem repellendus et, porro distinctio
-            laboriosam amet ut doloribus maxime unde?
-          </p>
-          <blockquote>
-            "Boosted productivity by 40%" - <cite>FYP, 2024</cite>
-          </blockquote>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam animi
-            dolorum explicabo a quibusdam, at suscipit sint nemo, delectus velit
-            reiciendis ducimus ipsum optio iste illo alias vero ea! Deserunt.
-          </p>
-        </main>
-
-        <footer>
-          <h2>Author: Raqeeb</h2>
-          <img src="https://picsum.photos/100/100" alt="Profile picture" />
-          <h3>Last edited: 30-08-2024</h3>
-          <a href="https://www.linkedin.com/in/raqeeb-rahim/" target="_blank"
-            >My LinkedIn account</a
-          >
-        </footer>
-      </article>
-      <article>
-        <header>
-          <!-- articles content header here -->
-          <h2>StudySpace WebApp</h2>
-          <h3>Stack: Python, JavaScript, HTML5, CSS, Django, Vue, SQL</h3>
-        </header>
-
-        <main>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            officia sapiente praesentium eveniet quibusdam eius ipsam odit aut.
-            Sequi libero porro nesciunt quisquam, itaque exercitationem ea.
-            Doloremque soluta cum iure delectus? Consectetur minima nulla quae
-            cum natus ipsa nemo voluptatem repellendus et, porro distinctio
-            laboriosam amet ut doloribus maxime unde?
-          </p>
-          <blockquote>
-            "Boosted productivity by 40%" - 
-            <cite>FYP,<a href="#">inline block</a> 2024</cite>
-          </blockquote>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam animi
-            dolorum explicabo a quibusdam, at suscipit sint nemo, delectus velit
-            reiciendis ducimus ipsum optio iste illo alias vero ea! Deserunt.
-          </p>
-        </main>
-
-        <footer>
-          <h2>Author: Raqeeb</h2>
-          <img src="https://picsum.photos/100/100" alt="Profile picture" />
-          <h3>Last edited: 30-08-2024</h3>
-          <a href="https://www.linkedin.com/in/raqeeb-rahim/" target="_blank"
-            >My LinkedIn account</a
-          >
-        </footer>
-      </article>
-
-      <aside>
-        <section>
-          <h4>Filter by Month</h4>
-          <nav>
-            <ul>
-              <li><a href=""></a>Filter for January</li>
-              <li><a href=""></a>Filter for February</li>
-              <li><a href=""></a>Filter for March</li>
-            </ul>
-          </nav>
-        </section>
-
-        <section>
-          <h4>Filter by category</h4>
-          <nav>
-            <ul>
-              <li><a href=""></a>Python</li>
-              <li><a href=""></a>JavaScript</li>
-              <li><a href=""></a>React</li>
-            </ul>
-          </nav>
-        </section>
-      </aside>
+       <div id="main-content">
+        
+        <div>
+          <aside>
+            <section>
+              <h4>Filter by Month</h4>
+              <nav>
+                <ul>
+                  <li><a href="#"></a>Filter for January</li>
+                  <li><a href="#"></a>Filter for February</li>
+                  <li><a href="#"></a>Filter for March</li>
+                </ul>
+              </nav>
+            </section>
+    
+            <section>
+              <h4>Filter by category</h4>
+              <nav>
+                <ul>
+                  <li><a href=""></a>Python</li>
+                  <li><a href=""></a>JavaScript</li>
+                  <li><a href=""></a>React</li>
+                </ul>
+              </nav>
+            </section>
+          </aside>
+         </div>
+        <div>
+          <article>
+            <header>
+              <!-- articles content header here -->
+              <h2>StudySpace WebApp</h2>
+              <h3>Stack: Python, JavaScript, HTML5, CSS, Django, Vue, SQL</h3>
+            </header>
+    
+            <main>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                officia sapiente praesentium eveniet quibusdam eius ipsam odit aut.
+                Sequi libero porro nesciunt quisquam, itaque exercitationem ea.
+                Doloremque soluta cum iure delectus? Consectetur minima nulla quae
+                cum natus ipsa nemo voluptatem repellendus et, porro distinctio
+                laboriosam amet ut doloribus maxime unde?
+              </p>
+              <blockquote>
+                "Boosted productivity by 40%" - <cite>FYP, 2024</cite>
+              </blockquote>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam animi
+                dolorum explicabo a quibusdam, at suscipit sint nemo, delectus velit
+                reiciendis ducimus ipsum optio iste illo alias vero ea! Deserunt.
+              </p>
+            </main>
+    
+            <footer>
+              <h2>Author: Raqeeb</h2>
+              <img src="https://picsum.photos/100/100" alt="Profile Avatar" />
+              <h3>Last edited: 30-08-2024</h3>
+              <a href="https://www.linkedin.com/in/raqeeb-rahim/" target="_blank"
+                >My LinkedIn account</a
+              >
+            </footer>
+          </article>
+          <article>
+            <header>
+              <!-- articles content header here -->
+              <h2>StudySpace WebApp</h2>
+              <h3>Stack: Python, JavaScript, HTML5, CSS, Django, Vue, SQL</h3>
+            </header>
+    
+            <main>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                officia sapiente praesentium eveniet quibusdam eius ipsam odit aut.
+                Sequi libero porro nesciunt quisquam, itaque exercitationem ea.
+                Doloremque soluta cum iure delectus? Consectetur minima nulla quae
+                cum natus ipsa nemo voluptatem repellendus et, porro distinctio
+                laboriosam amet ut doloribus maxime unde?
+              </p>
+              <blockquote>
+                "Boosted productivity by 40%" - 
+                <cite>FYP,<a href="#">inline block</a> 2024</cite>
+              </blockquote>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam animi
+                dolorum explicabo a quibusdam, at suscipit sint nemo, delectus velit
+                reiciendis ducimus ipsum optio iste illo alias vero ea! Deserunt.
+              </p>
+            </main>
+    
+            <footer>
+              <h2>Author: Raqeeb</h2>
+              <img src="https://picsum.photos/100/100" alt="Profile Avatar" />
+              <h3>Last edited: 30-08-2024</h3>
+              <a href="https://www.linkedin.com/in/raqeeb-rahim/" target="_blank"
+                >My LinkedIn account</a
+              >
+            </footer>
+          </article>
+         </div>
+        
+         
+       </div>
+       
+      
 
       <hr />
 
@@ -180,22 +191,28 @@
       <!-- content of footer goes here -->
       <h2>MyWebsite</h2>
       <section>
+
         <nav>
-          <ul>
+
+          <ul id="footer-ul">
             <div>
-              <li><a href=""></a>Home</li>
-              <li><a href=""></a>About Us</li>
-              <li><a href=""></a>Contact</li>
-              <li><a href=""></a>Careers</li>
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Careers</a></li>
             </div>
+
             <div>
-              <li><a href=""></a>Privacy</li>
-              <li><a href=""></a>Cookies</li>
-              <li><a href=""></a>Terms & Conditions</li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Cookies</a></li>
+              <li><a href="">Terms & Conditions</a></li>
             </div>
           </ul>
+
         </nav>
+
       </section>
+
     </footer>
   </body>
 </html>
